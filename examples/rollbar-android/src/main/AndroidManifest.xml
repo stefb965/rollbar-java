@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data android:name="com.rollbar.android.ACCESS_TOKEN" android:value="365033ff4ddf4d37b27535f5c77f9986" />
+        <meta-data android:name="com.rollbar.android.ACCESS_TOKEN" android:value="6957291874ba4610b2fbab3ae5706bb3" />
     </application>
 
 </manifest>
