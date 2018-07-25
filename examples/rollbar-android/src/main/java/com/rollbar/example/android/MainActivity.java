@@ -10,15 +10,17 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.rollbar.android.Rollbar;
+import com.rollbar.android.Rollbar
 
 public class MainActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-    setSupportActionBar(toolbar);
+    Rollbar.init(this);
+    Rollbar.instance().error(new Exception("This is a test error")); //remove this after initial testing
+  }
+}
 
     Rollbar.init(this);
 
